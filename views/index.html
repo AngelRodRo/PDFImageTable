@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script type="text/javascript" src="javascripts/FileSaver.min.js" ></script>
+      <script type="text/javascript" src="javascripts/jspdf.js"></script>
+      <script type="text/javascript" src="javascripts/jspdf.plugin.addimage.js"></script>
+      <script type="text/javascript" src="javascripts/jspdf.plugin.from_html.js"></script>
+      <script type="text/javascript" src="javascripts/jspdf.plugin.split_text_to_size.js"></script>
+      <script type="text/javascript" src="javascripts/jspdf.plugin.standard_fonts_metrics.js" ></script>
+      <script type="text/javascript" src="javascripts/jspdf.plugin.autotable.js"></script>
+      <script type="text/javascript" src='javascripts/pdfmake.min.js'></script>
+      <script src='javascripts/vfs_fonts.js'></script>
+      <script type="text/javascript" src="javascripts/jquery.tabletojson.js"></script>
+      <script type="text/javascript" src="javascripts/main.js"></script>
+      <script type="text/javascript" src="http://cdn.jsdelivr.net/rsvp/3.0.6/rsvp.js"></script>
+
+      <title></title>
+      <style media="screen">
+         .data{
+            height: 200px;
+         }
+
+         td{
+            border:1px solid black;
+            margin: 0;
+            padding: 0;
+         }
+      </style>
+   </head>
+   <body>
+       <table id="basic-table">
+          <thead>
+             <tr>
+                <th></th>
+                <th>Producto</th>
+                <th>Descripcion</th>
+                <th>P.U.</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+             </tr>
+          </thead>
+          <tbody>
+             <tr class="data">
+                <td ><img class="image" src="images/iphone6.jpg" alt="" width="100" height="100" /></td>
+                <td>Iphone</td>
+                <td>Celular con muchas caracteristicas interesantes</td>
+                <td>S/. 50.00</td>
+                <td>2</td>
+                <td>S/. 100.00</td>
+             </tr>
+             <tr class="data">
+                <td><img class="image" src="images/ipad.png" alt="" width="100" height="100" /></td>
+                <td>Ipad</td>
+                <td>Tablet con un buen rendimiento y con la calidad de Apple</td>
+                <td>S/. 70.00</td>
+                <td>2</td>
+                <td>S/. 140.00</td>
+             </tr>
+             <tr class="data">
+                <td ><img class="image"  src="images/iphone6.jpg" alt="" width="100" height="100" /></td>
+                <td>Mac</td>
+                <td>Celular con muchas caracteristicas interesantes</td>
+                <td>S/. 50.00</td>
+                <td>2</td>
+                <td>S/. 100.00</td>
+             </tr>
+             <tr class="data">
+                <td ><img class="image" src="images/iphone6.jpg" alt="" width="100" height="100" /></td>
+                <td>Iphone</td>
+                <td>Celular con muchas caracteristicas interesantes</td>
+                <td>S/. 50.00</td>
+                <td>2</td>
+                <td>S/. 100.00</td>
+             </tr>
+             <tr class="data">
+                <td ><img class="image" src="images/iphone6.jpg" alt="" width="100" height="100" /></td>
+                <td>Iphone</td>
+                <td>Celular con muchas caracteristicas interesantes</td>
+                <td>S/. 50.00</td>
+                <td>2</td>
+                <td>S/. 100.00</td>
+             </tr>
+ 
+
+
+          </tbody>
+
+       </table>
+       <div>
+         <p><font size="3" color="red">print this to pdf</font></p>
+       </div>
+       <button type="button" id="PDF" name="button">Generar PDF</button>
+  </body>
+</html>
